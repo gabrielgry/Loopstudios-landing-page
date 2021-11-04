@@ -1,59 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <header class='header'>
+    <div class='page-container'>
+      <nav class='nav'>
+        <div class='nav__topbar'>
+          <a><img src='' alt='Loopstudios' class='nav__logo'></a>
+          <span class='nav__menu'><object data=''></object></i></span>
+        </div>
 
-  Immersive experiences that deliver
+        <ul class='nav__list'>
+          <li class='nav__item'><a href='' class='nav__link'>About</a></li>
+          <li class='nav__item'><a href='' class='nav__link'>Careers</a></li>
+          <li class='nav__item'><a href='' class='nav__link'>Events</a></li>
+          <li class='nav__item'><a href='' class='nav__link'>Products</a></li>
+          <li class='nav__item'><a href='' class='nav__link'>Support</a></li>
+        </ul>
+      </nav>
 
-  The leader in interactive VR
+      <div class='header__headline-wrapper'>
+        <h1 class='header__headline'>Immersive experiences that deliver</h1>
+      </div>
+    </div>
+  </header>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
 
-  Our creations
 
-  See all
+  <main class='page-container'>
+    <section class='about'>
+      <div class='about__image-wrapper'>
+        <img src='' alt='Person using a VR headset' class='about__image'>
+      </div>
+      <div class='about__content-wraper'>
+        <div class='about__content'>
+          <h2 class='about__headline'>The leader in interactive VR</h2>
+          <p class='about__text'>
+            Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning
+            creations have transformed businesses through digital experiences that bind
+            to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+    <section class='projects'>
+      <div class='projects__headline-wrapper'>
+        <h2 class='projects__headline'>Our creations</h2>
+      </div>
+      <div class='projects__link-wrapper'>
+        <a class='projects__link'>See all</a>
+      </div>
+      <div class='projects__grid'>
 
-  About
-  Careers
-  Events
-  Products
-  Support
+        <div class='projects__item'>
+          <img src='' alt='' class='projects__item__image'>
+          <a href='' class='projects__item__link'>
+            <h3 class='projects__item__title'>Deep earth</h3>
+          </a>
+        </div>
 
-  © 2021 Loopstudios. All rights reserved.
+        <div class='projects__item'>
+          <img src='' alt='' class='projects__item__image'>
+          <a href='' class='projects__item__link'>
+            <h3 class='projects__item__title'>Night arcade</h3>
+          </a>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class='projects__item'>
+          <img src='' alt='' class='projects__item__image'>
+          <a href='' class='projects__item__link'>
+            <h3 class='projects__item__title'>Soccer team VR</h3>
+          </a>
+        </div>
+
+        <div class='projects__item'>
+          <img src='' alt='' class='projects__item__image'>
+          <a href='' class='projects__item__link'>
+            <h3 class='projects__item__title'>The grid</h3>
+          </a>
+        </div>
+
+        <div class='projects__item'>
+          <img src='' alt='' class='projects__item__image'>
+          <a href='' class='projects__item__link'>
+            <h3 class='projects__item__title'>From up above VR</h3>
+          </a>
+        </div>
+
+        <div class='projects__item'>
+          <img src='' alt='' class='projects__item__image'>
+          <a href='' class='projects__item__link'>
+            <h3 class='projects__item__title'>Pocket borealis</h3>
+          </a>
+        </div>
+
+        <div class='projects__item'>
+          <img src='' alt='' class='projects__item__image'>
+          <a href='' class='projects__item__link'>
+            <h3 class='projects__item__title'>The curiosity</h3>
+          </a>
+        </div>
+
+        <div class='projects__item'>
+          <img src='' alt='' class='projects__item__image'>
+          <a href='' class='projects__item__link'>
+            <h3 class='projects__item__title'>Make it fisheye</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class='footer'>
+    <div class='page-container'>
+      <div class='footer__left'>
+        <a><img class='footer__logo' src='' alt=''></a>
+        <ul class='footer__links'>
+          <li class='footer__links__item'><a class='footer__link'>About</a></li>
+          <li class='footer__links__item'><a class='footer__link'>Careers</a></li>
+          <li class='footer__links__item'><a class='footer__link'>Events</a></li>
+          <li class='footer__links__item'><a class='footer__link'>Products</a></li>
+          <li class='footer__links__item'><a class='footer__link'>Support</a></li>
+        </ul>
+      </div>
+      <div class='footer__right'>
+        <ul class='footer__socials'>
+          <li class='footer__socials__item'>
+            <a><object data='images/icon-facebook.svg'></object></a>
+          </li>
+          <li class='footer__socials__item'>
+            <a><object data='images/icon-twitter.svg'></object></a>
+          </li>
+          <li class='footer__socials__item'>
+            <a><object data='images/icon-pinterest.svg'></object></a>
+          </li>
+          <li class='footer__socials__item'>
+            <a><object data='images/icon-instagram.svg'></object></a>
+          </li>
+        </ul>
+        <span class='footer__copyright'>© 2021 Loopstudios. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
