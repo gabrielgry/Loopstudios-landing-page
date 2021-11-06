@@ -81,6 +81,7 @@ img {
 
 object {
   pointer-events: none;
+  display: block;
 }
 
 /* Page
@@ -159,6 +160,7 @@ body.menu--show {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .nav__list {
@@ -330,6 +332,7 @@ body.menu--show {
 }
 
 .projects__item__title {
+  line-height: 100%;
   color: var(--white);
 }
 
@@ -365,6 +368,7 @@ body.menu--show {
 
 .footer__link {
   color: var(--white);
+  text-decoration: none;
   cursor: pointer;
 }
 
