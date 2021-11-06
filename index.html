@@ -21,9 +21,6 @@
         <div class='nav__topbar'>
           <a href=''><img src='images/logo.svg' alt='Loopstudios' class='nav__logo'></a>
           <button type="button" id='menu-btn' class='nav__menu-btn'>
-            <!-- <img src='images/icon-hamburger.svg' id='icon-hamburger' class='nav__btn-icon'>
-            <img src='images/icon-close.svg' id='icon-close' class='nav__btn-icon hidden'> -->
-
             <object data='images/icon-hamburger.svg' id='icon-hamburger'></object>
             <object data='images/icon-close.svg' id='icon-close' class='hidden'></object>
           </button>
@@ -46,14 +43,18 @@
     <section class='hero'>
       <div class='container'>
         <div class='hero__headline-wrapper'>
-          <h1 class='hero__headline'>Immersive experiences that deliver</h1>
+          <h1 class='hero__headline'>Immersive<br>experiences<br>that<br>deliver</h1>
         </div>
       </div>
     </section>
 
-    <section class='about'>
+    <section class='about container'>
       <div class='about__image-wrapper'>
-        <img src='' alt='Person using a VR headset' class='about__image'>
+        <picture>
+          <source srcset="images/desktop/image-interactive.jpg" media="screen and (min-width: 750px)">
+          <img src='images/mobile/image-interactive.jpg' width="654" height="448" alt='Person using a VR headset'
+            class='about__image'>
+        </picture>
       </div>
       <div class='about__content-wraper'>
         <div class='about__content'>
@@ -68,66 +69,90 @@
       </div>
     </section>
 
-    <section class='projects'>
+    <section class='projects container'>
       <div class='projects__headline-wrapper'>
         <h2 class='projects__headline'>Our creations</h2>
       </div>
       <div class='projects__link-wrapper'>
-        <a class='projects__link'>See all</a>
+        <a href='' class='projects__link'>See all</a>
       </div>
       <div class='projects__grid'>
 
         <div class='projects__item'>
-          <img src='' alt='' class='projects__item__image'>
+          <picture>
+            <source srcset="images/desktop/image-deep-earth.jpg" media='(min-width: 750px)'>
+            <img src='images/mobile/image-deep-earth.jpg' alt='' class='projects__item__image'>
+          </picture>
           <a href='' class='projects__item__link'>
             <h3 class='projects__item__title'>Deep earth</h3>
           </a>
         </div>
 
         <div class='projects__item'>
-          <img src='' alt='' class='projects__item__image'>
+          <picture>
+            <source srcset="images/desktop/image-night-arcade.jpg" media='(min-width: 750px)'>
+            <img src='images/mobile/image-night-arcade.jpg' alt='' class='projects__item__image'>
+          </picture>
           <a href='' class='projects__item__link'>
             <h3 class='projects__item__title'>Night arcade</h3>
           </a>
         </div>
 
         <div class='projects__item'>
-          <img src='' alt='' class='projects__item__image'>
+          <picture>
+            <source srcset="images/desktop/image-soccer-team.jpg" media='(min-width: 750px)'>
+            <img src='images/mobile/image-soccer-team.jpg' alt='' class='projects__item__image'>
+          </picture>
           <a href='' class='projects__item__link'>
             <h3 class='projects__item__title'>Soccer team VR</h3>
           </a>
         </div>
 
         <div class='projects__item'>
-          <img src='' alt='' class='projects__item__image'>
+          <picture>
+            <source srcset="images/desktop/image-grid.jpg" media='(min-width: 750px)'>
+            <img src='images/mobile/image-grid.jpg' alt='' class='projects__item__image'>
+          </picture>
           <a href='' class='projects__item__link'>
             <h3 class='projects__item__title'>The grid</h3>
           </a>
         </div>
 
         <div class='projects__item'>
-          <img src='' alt='' class='projects__item__image'>
+          <picture>
+            <source srcset="images/desktop/image-from-above.jpg" media='(min-width: 750px)'>
+            <img src='images/mobile/image-from-above.jpg' alt='' class='projects__item__image'>
+          </picture>
           <a href='' class='projects__item__link'>
             <h3 class='projects__item__title'>From up above VR</h3>
           </a>
         </div>
 
         <div class='projects__item'>
-          <img src='' alt='' class='projects__item__image'>
+          <picture>
+            <source srcset="images/desktop/image-pocket-borealis.jpg" media='(min-width: 750px)'>
+            <img src='images/mobile/image-pocket-borealis.jpg' alt='' class='projects__item__image'>
+          </picture>
           <a href='' class='projects__item__link'>
             <h3 class='projects__item__title'>Pocket borealis</h3>
           </a>
         </div>
 
         <div class='projects__item'>
-          <img src='' alt='' class='projects__item__image'>
+          <picture>
+            <source srcset="images/desktop/image-curiosity.jpg" media='(min-width: 750px)'>
+            <img src='images/mobile/image-curiosity.jpg' alt='' class='projects__item__image'>
+          </picture>
           <a href='' class='projects__item__link'>
             <h3 class='projects__item__title'>The curiosity</h3>
           </a>
         </div>
 
         <div class='projects__item'>
-          <img src='' alt='' class='projects__item__image'>
+          <picture>
+            <source srcset="images/desktop/image-fisheye.jp" media='(min-width: 750px)'>
+            <img src='images/mobile/image-fisheye.jpg' alt='' class='projects__item__image'>
+          </picture>
           <a href='' class='projects__item__link'>
             <h3 class='projects__item__title'>Make it fisheye</h3>
           </a>
@@ -141,7 +166,7 @@
   <footer class='footer'>
     <div class='container'>
       <div class='footer__left'>
-        <a><img class='footer__logo' src='' alt=''></a>
+        <a href=''><img src='images/logo.svg' alt='Loopstudios' class='footer__logo'></a>
         <ul class='footer__links'>
           <li class='footer__links__item'><a class='footer__link'>About</a></li>
           <li class='footer__links__item'><a class='footer__link'>Careers</a></li>
@@ -153,16 +178,16 @@
       <div class='footer__right'>
         <ul class='footer__socials'>
           <li class='footer__socials__item'>
-            <a><object data='images/icon-facebook.svg'></object></a>
+            <a href=""><object data='images/icon-facebook.svg'></object></a>
           </li>
           <li class='footer__socials__item'>
-            <a><object data='images/icon-twitter.svg'></object></a>
+            <a href=""><object data='images/icon-twitter.svg'></object></a>
           </li>
           <li class='footer__socials__item'>
-            <a><object data='images/icon-pinterest.svg'></object></a>
+            <a href=""><object data='images/icon-pinterest.svg'></object></a>
           </li>
           <li class='footer__socials__item'>
-            <a><object data='images/icon-instagram.svg'></object></a>
+            <a href=""><object data='images/icon-instagram.svg'></object></a>
           </li>
         </ul>
         <span class='footer__copyright'>© 2021 Loopstudios. All rights reserved.</span>

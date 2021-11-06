@@ -59,6 +59,13 @@ h3 {
 
 p {
   color: var(--gray);
+  margin: 0;
+}
+
+@media screen and (max-width: 370px) {
+  h1 {
+    font-size: 2.375rem;
+  }
 }
 
 /* Fixes and Utility
@@ -82,7 +89,6 @@ object {
 body {
   width: 100%;
   overflow-x: hidden;
-  background: blue;
 }
 
 /* Prevent scroll */
@@ -91,8 +97,9 @@ body.menu--show {
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
-  padding: 0 32px;
+  padding: 0 24px;
   margin: 0 auto;
 }
 
@@ -151,6 +158,7 @@ body.menu--show {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .nav__list {
@@ -173,7 +181,7 @@ body.menu--show {
   color: var(--white);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
   .nav__link {
     font-family: var(--ff-heading);
     font-weight: 300;
@@ -186,6 +194,193 @@ body.menu--show {
 
 /* Hero
    ========================================================================== */
-/* .main {
-  margin-top: 1000px;
-} */
+.main {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 650px;
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+}
+
+.hero__headline-wrapper {
+  border: 2px solid var(--white);
+  padding: 26px 24px;
+}
+
+.hero__headline {
+  color: var(--white);
+}
+
+@media screen and (max-width: 370px) {
+  .hero__headline-wrapper {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .hero {
+    background-image: url("../images/desktop/image-hero.jpg");
+  }
+}
+
+/* About
+   ========================================================================== */
+.about {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
+.about__image-wrapper {
+  width: 100%;
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+}
+
+.about__content {
+  text-align: center;
+}
+
+.about__headline {
+  margin-top: 42px;
+  margin-bottom: 24px;
+}
+
+/* Projects
+   ========================================================================== */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 92px;
+}
+
+.projects__headline-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.projects__link-wrapper {
+  order: 1;
+  display: flex;
+  width: 100%;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.projects__link {
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  letter-spacing: 0.295em;
+  line-height: 100%;
+  text-decoration: none;
+  color: var(--black);
+  padding: 12px 42px;
+  border: 2px solid var(--black);
+}
+
+.projects__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 42px;
+}
+
+.projects__item {
+  position: relative;
+}
+
+.projects__item__image {
+  width: 100%;
+  height: auto;
+}
+
+.projects__item__link {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 22px;
+  align-items: flex-end;
+  text-decoration: none;
+  background-color: hsla(0, 0%, 0%, 30%);
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.projects__item__link:hover,
+.projects__item__link:active {
+  background-color: hsla(100, 100%, 100%, 30%);
+}
+
+.projects__item__title {
+  color: var(--white);
+}
+
+/* Footer
+   ========================================================================== */
+.footer {
+  background-color: var(--black);
+  padding: 54px 0;
+}
+
+.footer__left,
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__links {
+  width: 100%;
+  margin: 28px 0 36px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__links__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.footer__socials {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__socials__item {
+  display: flex;
+  padding: 8px;
+}
+
+.footer__copyright {
+  margin-top: 16px;
+  color: var(--dark-gray);
+}
