@@ -7,20 +7,29 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel='stylesheet' href='styles/normalize.css'>
+  <link rel='stylesheet' href='styles/main.css'>
+
   <title>Frontend Mentor | Loopstudios landing page</title>
 
 </head>
 
-<body>
-  <header class='header'>
-    <div class='page-container'>
-      <nav class='nav'>
+<body id='body'>
+  <header id='header' class='header'>
+    <div class='container'>
+      <nav id='navbar' class='nav'>
         <div class='nav__topbar'>
-          <a><img src='' alt='Loopstudios' class='nav__logo'></a>
-          <span class='nav__menu'><object data=''></object></i></span>
+          <a href=''><img src='images/logo.svg' alt='Loopstudios' class='nav__logo'></a>
+          <button type="button" id='menu-btn' class='nav__menu-btn'>
+            <!-- <img src='images/icon-hamburger.svg' id='icon-hamburger' class='nav__btn-icon'>
+            <img src='images/icon-close.svg' id='icon-close' class='nav__btn-icon hidden'> -->
+
+            <object data='images/icon-hamburger.svg' id='icon-hamburger'></object>
+            <object data='images/icon-close.svg' id='icon-close' class='hidden'></object>
+          </button>
         </div>
 
-        <ul class='nav__list'>
+        <ul id='menu-links' class='nav__list'>
           <li class='nav__item'><a href='' class='nav__link'>About</a></li>
           <li class='nav__item'><a href='' class='nav__link'>Careers</a></li>
           <li class='nav__item'><a href='' class='nav__link'>Events</a></li>
@@ -28,16 +37,20 @@
           <li class='nav__item'><a href='' class='nav__link'>Support</a></li>
         </ul>
       </nav>
-
-      <div class='header__headline-wrapper'>
-        <h1 class='header__headline'>Immersive experiences that deliver</h1>
-      </div>
     </div>
   </header>
 
 
 
-  <main class='page-container'>
+  <main class='main'>
+    <section class='hero'>
+      <div class='container'>
+        <div class='hero__headline-wrapper'>
+          <h1 class='hero__headline'>Immersive experiences that deliver</h1>
+        </div>
+      </div>
+    </section>
+
     <section class='about'>
       <div class='about__image-wrapper'>
         <img src='' alt='Person using a VR headset' class='about__image'>
@@ -126,7 +139,7 @@
 
 
   <footer class='footer'>
-    <div class='page-container'>
+    <div class='container'>
       <div class='footer__left'>
         <a><img class='footer__logo' src='' alt=''></a>
         <ul class='footer__links'>
@@ -156,6 +169,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/navigation.js"></script>
 </body>
 
 </html>
